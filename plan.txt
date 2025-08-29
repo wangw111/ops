@@ -1,0 +1,12 @@
+- 用 Streamlit agno 生成一个 开发助手agent
+- agent 可以是运维专家
+- agent 可以是go 专家
+- agent 可以是监控专家
+- agent 可以是ansible专家
+- agent 开发有完整的代码注释，符合语言规范，逻辑清晰
+- agent 可以生成代码，代码可以运行
+- agent 可以生成markdown文档，markdown文档可以运行
+- agent 可以对接openai claude qwen
+
+
+
