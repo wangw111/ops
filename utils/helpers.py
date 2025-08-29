@@ -109,6 +109,12 @@ def get_agent_info(agent_type: Optional[str] = None) -> Dict[str, Any]:
             "description": "专业的系统监控、性能分析和告警配置专家", 
             "icon": "📊",
             "color": "#45B7D1"
+        },
+        "ansible": {
+            "name": "Ansible专家",
+            "description": "专业的自动化配置管理、部署和DevOps工具链专家",
+            "icon": "🎭",
+            "color": "#9B59B6"
         }
     }
     

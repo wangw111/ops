@@ -2,7 +2,9 @@
 Go language expert agent for Go development assistance.
 """
 
+from typing import Dict, Any, List
 from agents.openai_agent import OpenAIAgent
+from utils.code_generator import CodeGenerator
 
 
 class GoAgent(OpenAIAgent):
@@ -11,6 +13,7 @@ class GoAgent(OpenAIAgent):
     def __init__(self):
         """初始化Go语言专家Agent"""
         super().__init__("go")
+        self.code_generator = CodeGenerator(self.logger)
         self.logger.info("Go语言专家Agent已初始化")
     
     def get_system_prompt(self) -> str:
@@ -278,3 +281,270 @@ func main() {
         ]
         
         return f"代码分析结果：\n" + "\n".join([f"✓ {point}" for point in analysis_points])
+    
+    def generate_runnable_go_project(self, project_name: str, project_type: str = "web") -> Dict[str, str]:
+        """
+        生成可运行的Go项目
+        
+        Args:
+            project_name: 项目名称
+            project_type: 项目类型
+            
+        Returns:
+            项目文件结构字典
+        """
+        project_templates = {
+            "web": {
+                f"{project_name}/main.go": self.code_generator.generate_executable_script(
+                    """package main
+
+import (
+    "encoding/json"
+    "log"
+    "net/http"
+    "time"
+)
+
+type Response struct {
+    Message    string    `json:"message"`
+    Timestamp  time.Time `json:"timestamp"`
+    Status     int       `json:"status"`
+}
+
+func main() {
+    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        w.Header().Set("Content-Type", "application/json")
+        
+        response := Response{
+            Message:   "Hello from Go Web Server!",
+            Timestamp: time.Now(),
+            Status:    200,
+        }
+        
+        if err := json.NewEncoder(w).Encode(response); err != nil {
+            http.Error(w, err.Error(), http.StatusInternalServerError)
+            return
+        }
+    })
+    
+    port := ":8080"
+    log.Printf("Server starting on port %s", port)
+    
+    if err := http.ListenAndServe(port, nil); err != nil {
+        log.Fatal(err)
+    }
+}""", "go", "main.go"
+                ),
+                f"{project_name}/go.mod": f"""module {project_name}
+
+go 1.21
+
+require (
+)""",
+                f"{project_name}/handlers/": None,
+                f"{project_name}/handlers/handlers.go": """package handlers
+
+import (
+    "net/http"
+)
+
+// HealthHandler 健康检查处理器
+func HealthHandler(w http.ResponseWriter, r *http.Request) {
+    w.WriteHeader(http.StatusOK)
+    w.Write([]byte("OK"))
+}
+
+// APIHandler API处理器
+func APIHandler(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Content-Type", "application/json")
+    w.WriteHeader(http.StatusOK)
+    w.Write([]byte(`{"message": "API endpoint"}`))
+}
+""",
+                f"{project_name}/config/": None,
+                f"{project_name}/config/config.go": """package config
+
+import (
+    "os"
+    "strconv"
+)
+
+// Config 应用配置
+type Config struct {
+    Port         string
+    LogLevel     string
+    DatabaseURL  string
+}
+
+// LoadConfig 加载配置
+func LoadConfig() *Config {
+    return &Config{
+        Port:         getEnv("PORT", "8080"),
+        LogLevel:     getEnv("LOG_LEVEL", "info"),
+        DatabaseURL:  getEnv("DATABASE_URL", ""),
+    }
+}
+
+func getEnv(key, defaultValue string) string {
+    if value := os.Getenv(key); value != "" {
+        return value
+    }
+    return defaultValue
+}
+""",
+                f"{project_name}/README.md": self.code_generator.generate_markdown_documentation(
+                    f"{project_name} - Go Web项目",
+                    "这是一个使用Go语言开发的Web应用项目。",
+                    [
+                        {
+                            "title": "运行项目",
+                            "description": "启动Go Web服务器",
+                            "language": "bash",
+                            "code": f"cd {project_name}\ngo run main.go"
+                        },
+                        {
+                            "title": "构建项目",
+                            "description": "编译Go项目",
+                            "language": "bash",
+                            "code": f"cd {project_name}\ngo build -o {project_name} main.go"
+                        }
+                    ]
+                )
+            },
+            "cli": {
+                f"{project_name}/main.go": self.code_generator.generate_executable_script(
+                    """package main
+
+import (
+    "flag"
+    "fmt"
+    "log"
+    "os"
+)
+
+func main() {
+    // 定义命令行参数
+    name := flag.String("name", "World", "指定名称")
+    age := flag.Int("age", 0, "指定年龄")
+    verbose := flag.Bool("verbose", false, "详细输出")
+    
+    flag.Parse()
+    
+    // 验证参数
+    if *age < 0 {
+        log.Fatal("年龄不能为负数")
+    }
+    
+    // 输出结果
+    if *verbose {
+        fmt.Printf("详细信息：\\n")
+        fmt.Printf("  名称: %s\\n", *name)
+        fmt.Printf("  年龄: %d\\n", *age)
+        fmt.Printf("  程序名: %s\\n", os.Args[0])
+    } else {
+        fmt.Printf("Hello, %s! ", *name)
+        if *age > 0 {
+            fmt.Printf("You are %d years old.\\n", *age)
+        } else {
+            fmt.Println("\\n")
+        }
+    }
+}
+""", "go", "main.go"
+                ),
+                f"{project_name}/go.mod": f"""module {project_name}
+
+go 1.21
+
+require (
+)""",
+                f"{project_name}/cmd/": None,
+                f"{project_name}/cmd/version.go": """package cmd
+
+import (
+    "fmt"
+    "runtime"
+)
+
+// Version 版本信息
+var Version = "1.0.0"
+var BuildTime = "unknown"
+
+// PrintVersion 打印版本信息
+func PrintVersion() {
+    fmt.Printf("%s version %s\\n", os.Args[0], Version)
+    fmt.Printf("Build time: %s\\n", BuildTime)
+    fmt.Printf("Go version: %s\\n", runtime.Version())
+    fmt.Printf("OS/Arch: %s/%s\\n", runtime.GOOS, runtime.GOARCH)
+}
+""",
+                f"{project_name}/README.md": self.code_generator.generate_markdown_documentation(
+                    f"{project_name} - Go CLI工具",
+                    "这是一个使用Go语言开发的命令行工具。",
+                    [
+                        {
+                            "title": "基本使用",
+                            "description": "运行CLI工具",
+                            "language": "bash",
+                            "code": f"cd {project_name}\ngo run main.go -name Alice -age 25"
+                        },
+                        {
+                            "title": "详细输出",
+                            "description": "启用详细模式",
+                            "language": "bash",
+                            "code": f"cd {project_name}\ngo run main.go -name Bob -age 30 -verbose"
+                        }
+                    ]
+                )
+            }
+        }
+        
+        return project_templates.get(project_type, {})
+    
+    def validate_go_code(self, code: str) -> tuple:
+        """
+        验证Go代码
+        
+        Args:
+            code: Go代码内容
+            
+        Returns:
+            (是否有效, 错误信息)
+        """
+        return self.code_generator.validate_code(code, "go")
+    
+    def generate_go_documentation(self, code: str, title: str) -> str:
+        """
+        生成Go代码文档
+        
+        Args:
+            code: Go代码
+            title: 文档标题
+            
+        Returns:
+            Markdown文档
+        """
+        return self.code_generator.generate_markdown_documentation(
+            title,
+            "这是一个Go语言代码示例，包含了完整的代码实现和使用说明。",
+            [
+                {
+                    "title": "Go代码示例",
+                    "description": "完整的Go代码实现",
+                    "language": "go",
+                    "code": code
+                },
+                {
+                    "title": "运行代码",
+                    "description": "如何运行Go代码",
+                    "language": "bash",
+                    "code": "go run main.go"
+                },
+                {
+                    "title": "构建项目",
+                    "description": "如何构建Go项目",
+                    "language": "bash",
+                    "code": "go build -o app main.go"
+                }
+            ]
+        )

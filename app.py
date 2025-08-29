@@ -14,6 +14,8 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from agents.operations_agent import OperationsAgent
 from agents.go_agent import GoAgent
 from agents.monitoring_agent import MonitoringAgent
+from agents.ansible_agent import AnsibleAgent
+from agents.multi_ai_agent import MultiAIAgent
 from utils.helpers import get_agent_info, setup_logging, format_timestamp
 from config.settings import get_config
 
@@ -23,16 +25,40 @@ class StreamlitInterface:
     
     def __init__(self):
         """初始化Streamlit界面"""
-        self.agents = {
-            "operations": OperationsAgent(),
-            "go": GoAgent(),
-            "monitoring": MonitoringAgent()
-        }
         self.logger = setup_logging()
         self.config = get_config()
         
+        # 初始化AI提供商
+        self.ai_providers = ["openai", "claude", "qwen"]
+        self.default_provider = os.getenv("DEFAULT_AI_PROVIDER", "openai")
+        
+        # 初始化agents
+        self.agents = self._initialize_agents()
+        
         # 初始化session state
         self._init_session_state()
+    
+    def _initialize_agents(self) -> Dict[str, Any]:
+        """初始化agents"""
+        agents = {}
+        
+        for agent_type in ["operations", "go", "monitoring", "ansible"]:
+            try:
+                agents[agent_type] = MultiAIAgent(agent_type, self.default_provider)
+                self.logger.info(f"初始化 {agent_type} Agent 成功")
+            except Exception as e:
+                self.logger.error(f"初始化 {agent_type} Agent 失败: {str(e)}")
+                # 如果MultiAIAgent失败，使用原来的Agent
+                if agent_type == "operations":
+                    agents[agent_type] = OperationsAgent()
+                elif agent_type == "go":
+                    agents[agent_type] = GoAgent()
+                elif agent_type == "monitoring":
+                    agents[agent_type] = MonitoringAgent()
+                elif agent_type == "ansible":
+                    agents[agent_type] = AnsibleAgent()
+        
+        return agents
     
     def _init_session_state(self):
         """初始化session state"""
@@ -66,6 +92,41 @@ class StreamlitInterface:
                     ):
                         st.session_state.current_agent = agent_type
                         st.rerun()
+        
+        st.sidebar.markdown("---")
+        
+        # AI提供商选择
+        st.sidebar.subheader("AI提供商")
+        selected_provider = st.sidebar.selectbox(
+            "选择AI模型",
+            self.ai_providers,
+            key="ai_provider_select"
+        )
+        
+        # 显示提供商状态
+        current_agent = self.agents[st.session_state.current_agent]
+        if hasattr(current_agent, 'get_provider_info'):
+            provider_info = current_agent.get_provider_info()
+            st.sidebar.markdown(f"**当前**: {provider_info['provider'].upper()}")
+            st.sidebar.markdown(f"**模型**: {provider_info['model']}")
+            
+            # 验证配置状态
+            if hasattr(current_agent, 'validate_provider_config'):
+                is_valid, message = current_agent.validate_provider_config()
+                if is_valid:
+                    st.sidebar.success("✓ " + message)
+                else:
+                    st.sidebar.error("✗ " + message)
+        
+        # 切换提供商按钮
+        if hasattr(current_agent, 'switch_provider') and selected_provider != current_agent.provider:
+            if st.sidebar.button("切换提供商", key="switch_provider"):
+                try:
+                    current_agent.switch_provider(selected_provider)
+                    st.sidebar.success(f"已切换到 {selected_provider}")
+                    st.rerun()
+                except Exception as e:
+                    st.sidebar.error(f"切换失败: {str(e)}")
         
         st.sidebar.markdown("---")
         
@@ -155,6 +216,8 @@ class StreamlitInterface:
             self._render_go_features()
         elif st.session_state.current_agent == "monitoring":
             self._render_monitoring_features()
+        elif st.session_state.current_agent == "ansible":
+            self._render_ansible_features()
     
     def _render_operations_features(self):
         """渲染运维专家特色功能"""
@@ -221,12 +284,51 @@ class StreamlitInterface:
             if st.button("生成Prometheus配置", key="generate_prometheus"):
                 st.code(monitor_agent.generate_prometheus_config(service_name), language="yaml")
     
+    def _render_ansible_features(self):
+        """渲染Ansible专家特色功能"""
+        ansible_agent = self.agents["ansible"]
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("#### 📚 Playbook生成")
+            playbook_type = st.selectbox(
+                "选择Playbook类型",
+                ["web_server", "database_server", "docker_install"],
+                key="playbook_type_select"
+            )
+            target_os = st.selectbox(
+                "目标操作系统",
+                ["centos", "ubuntu"],
+                key="target_os_select"
+            )
+            
+            if st.button("生成Playbook", key="generate_playbook"):
+                st.code(ansible_agent.generate_ansible_playbook(playbook_type, target_os), language="yaml")
+        
+        with col2:
+            st.markdown("#### 🎭 Role结构")
+            role_name = st.text_input("Role名称", value="my_role", key="role_name_input")
+            
+            if st.button("生成Role结构", key="generate_role"):
+                st.code(ansible_agent.generate_ansible_role(role_name), language="yaml")
+            
+            st.markdown("#### 📋 Inventory文件")
+            env_type = st.selectbox(
+                "环境类型",
+                ["production", "staging", "development"],
+                key="env_type_select"
+            )
+            
+            if st.button("生成Inventory", key="generate_inventory"):
+                st.code(ansible_agent.generate_inventory_file(env_type), language="ini")
+    
     def render_statistics(self):
         """渲染统计信息"""
         st.markdown("---")
         st.subheader("📈 使用统计")
         
-        col1, col2, col3 = st.columns(3)
+        col1, col2, col3, col4 = st.columns(4)
         
         with col1:
             total_conversations = sum(len(history) for history in st.session_state.chat_history.values())
@@ -238,6 +340,13 @@ class StreamlitInterface:
         
         with col3:
             st.metric("可用Agent", len(self.agents))
+        
+        with col4:
+            current_agent = self.agents[st.session_state.current_agent]
+            if hasattr(current_agent, 'provider'):
+                st.metric("当前AI", current_agent.provider.upper())
+            else:
+                st.metric("当前AI", "OPENAI")
     
     def run(self):
         """运行Streamlit应用"""
