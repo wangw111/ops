@@ -3,16 +3,21 @@ Ansible expert agent for automation and configuration management.
 """
 
 from typing import Dict, Any, List
-from agents.openai_agent import OpenAIAgent
+from agents.multi_ai_agent import MultiAIAgent
 from utils.code_generator import CodeGenerator
 
 
-class AnsibleAgent(OpenAIAgent):
+class AnsibleAgent(MultiAIAgent):
     """Ansible专家Agent - 专门处理自动化配置管理和部署任务"""
     
-    def __init__(self):
-        """初始化Ansible专家Agent"""
-        super().__init__("ansible")
+    def __init__(self, provider: str = "openai"):
+        """
+        初始化Ansible专家Agent
+        
+        Args:
+            provider: AI提供商 (openai, claude, qwen)
+        """
+        super().__init__("ansible", provider)
         self.code_generator = CodeGenerator(self.logger)
         self.logger.info("Ansible专家Agent已初始化")
     

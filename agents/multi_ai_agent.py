@@ -31,14 +31,14 @@ class MultiAIAgent(BaseAgent):
         provider_configs = {
             "openai": {
                 "api_key": os.getenv("OPENAI_API_KEY", ""),
-                "base_url": "https://api.openai.com/v1",
+                "base_url": os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1"),
                 "model": os.getenv("OPENAI_MODEL", "gpt-3.5-turbo"),
                 "max_tokens": int(os.getenv("OPENAI_MAX_TOKENS", "1000")),
                 "temperature": float(os.getenv("OPENAI_TEMPERATURE", "0.7"))
             },
             "claude": {
-                "api_key": os.getenv("CLAUDE_API_KEY", ""),
-                "base_url": "https://api.anthropic.com",
+                "api_key": os.getenv("ANTHROPIC_AUTH_TOKEN", ""),
+                "base_url": os.getenv("ANTHROPIC_BASE_URL", "https://api.anthropic.com"),
                 "model": os.getenv("CLAUDE_MODEL", "claude-3-sonnet-20240229"),
                 "max_tokens": int(os.getenv("CLAUDE_MAX_TOKENS", "1000")),
                 "temperature": float(os.getenv("CLAUDE_TEMPERATURE", "0.7"))
@@ -61,12 +61,22 @@ class MultiAIAgent(BaseAgent):
     
     def _initialize_client(self):
         """初始化AI客户端"""
+        # 验证API密钥
+        api_key = self.config.get("api_key", "")
+        if not api_key or api_key == "your_openai_api_key_here" or api_key == "your_claude_api_key_here" or api_key == "your_qwen_api_key_here":
+            self.logger.warning(f"AI提供商 {self.provider} 的API密钥未配置，请检查环境变量设置")
+            return None
+        
         if self.provider == "openai":
             from openai import OpenAI
-            return OpenAI(api_key=self.config["api_key"])
+            # 检查是否为智谱AI的BASE_URL
+            base_url = self.config["base_url"]
+            if "bigmodel.cn" in base_url:
+                self.logger.info("检测到智谱AI的BASE_URL，使用智谱AI配置")
+            return OpenAI(api_key=api_key, base_url=base_url)
         elif self.provider == "claude":
             import anthropic
-            return anthropic.Anthropic(api_key=self.config["api_key"])
+            return anthropic.Anthropic(api_key=api_key, base_url=self.config["base_url"])
         elif self.provider == "qwen":
             # Qwen使用DashScope SDK
             try:
@@ -209,9 +219,16 @@ class MultiAIAgent(BaseAgent):
         
         if self.provider == "openai":
             try:
-                # 简单的API密钥格式验证
-                if not self.config["api_key"].startswith("sk-"):
-                    return False, "OpenAI API密钥格式不正确"
+                # 检查是否为智谱AI的BASE_URL
+                base_url = self.config.get("base_url", "")
+                if "bigmodel.cn" in base_url:
+                    # 智谱AI的API密钥格式验证
+                    if len(self.config["api_key"]) < 10:
+                        return False, "智谱AI API密钥格式不正确"
+                else:
+                    # 标准OpenAI API密钥格式验证
+                    if not self.config["api_key"].startswith("sk-"):
+                        return False, "OpenAI API密钥格式不正确"
             except Exception as e:
                 return False, f"OpenAI配置验证失败: {str(e)}"
         

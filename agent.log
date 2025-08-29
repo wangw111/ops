@@ -156,3 +156,931 @@
 2025-08-29 17:20:36,061 - utils.helpers - INFO - Go语言专家Agent已初始化
 2025-08-29 17:20:40,003 - utils.helpers - INFO - 初始化 operations Agent
 2025-08-29 17:20:40,051 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:24:15,686 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:24:15,715 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:24:15,715 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:24:15,717 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:24:15,732 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:24:15,732 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:24:15,733 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:24:15,747 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:24:15,747 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:24:15,749 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:24:15,762 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:24:15,762 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:25:21,804 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:25:21,823 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:25:21,823 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:25:21,825 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:25:21,840 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:25:21,841 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:25:21,842 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:25:21,861 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:25:21,861 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:25:21,863 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:25:21,878 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:25:21,878 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:25:26,575 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:25:26,602 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:25:26,603 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:25:26,605 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:25:26,623 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:25:26,623 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:25:26,625 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:25:26,641 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:25:26,641 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:25:26,642 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:25:26,657 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:25:26,657 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:25:26,660 - utils.helpers - INFO - 对话历史已清空
+2025-08-30 00:25:26,688 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:25:26,703 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:25:26,703 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:25:26,704 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:25:26,719 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:25:26,719 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:25:26,720 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:25:26,735 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:25:26,735 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:25:26,736 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:25:26,750 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:25:26,750 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:27:17,604 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:27:17,620 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:27:17,620 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:27:17,622 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:27:17,637 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:27:17,637 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:27:17,638 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:27:17,652 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:27:17,652 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:27:17,654 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:27:17,670 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:27:17,670 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:27:27,743 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:27:27,757 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:27:27,757 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:27:27,758 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:27:27,773 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:27:27,773 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:27:27,774 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:27:27,789 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:27:27,789 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:27:27,791 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:27:27,805 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:27:27,805 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:27:27,835 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:27:27,849 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:27:27,849 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:27:27,851 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:27:27,866 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:27:27,866 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:27:27,867 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:27:27,881 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:27:27,881 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:27:27,883 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:27:27,898 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:27:27,898 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:27:29,115 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:27:29,129 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:27:29,129 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:27:29,131 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:27:29,145 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:27:29,145 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:27:29,146 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:27:29,160 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:27:29,160 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:27:29,162 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:27:29,176 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:27:29,176 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:27:29,208 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:27:29,223 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:27:29,223 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:27:29,225 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:27:29,239 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:27:29,239 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:27:29,241 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:27:29,255 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:27:29,255 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:27:29,256 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:27:29,271 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:27:29,271 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:27:35,588 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:27:35,603 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:27:35,603 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:27:35,605 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:27:35,619 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:27:35,619 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:27:35,620 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:27:35,635 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:27:35,635 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:27:35,637 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:27:35,651 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:27:35,651 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:27:57,850 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:27:57,864 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:27:57,864 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:27:57,866 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:27:57,880 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:27:57,881 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:27:57,882 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:27:57,896 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:27:57,896 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:27:57,898 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:27:57,913 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:27:57,913 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:27:57,916 - utils.helpers - INFO - 对话历史已清空
+2025-08-30 00:27:57,947 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:27:57,962 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:27:57,962 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:27:57,963 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:27:57,978 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:27:57,978 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:27:57,979 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:27:57,994 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:27:57,994 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:27:57,995 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:27:58,009 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:27:58,009 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:28:05,377 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:28:05,392 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:28:05,392 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:28:05,394 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:28:05,408 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:28:05,408 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:28:05,409 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:28:05,424 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:28:05,424 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:28:05,426 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:28:05,440 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:28:05,440 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:28:05,472 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:28:05,486 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:28:05,486 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:28:05,488 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:28:05,502 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:28:05,502 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:28:05,504 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:28:05,518 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:28:05,518 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:28:05,519 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:28:05,534 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:28:05,534 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:28:16,876 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:28:16,891 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:28:16,891 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:28:16,893 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:28:16,907 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:28:16,907 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:28:16,908 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:28:16,923 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:28:16,923 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:28:16,924 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:28:16,939 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:28:16,939 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:28:18,692 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:28:18,706 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:28:18,706 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:28:18,708 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:28:18,722 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:28:18,722 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:28:18,724 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:28:18,738 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:28:18,738 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:28:18,740 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:28:18,754 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:28:18,754 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:28:22,455 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:28:22,470 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:28:22,470 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:28:22,472 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:28:22,486 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:28:22,487 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:28:22,488 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:28:22,503 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:28:22,503 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:28:22,504 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:28:22,520 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:28:22,520 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:28:41,001 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:28:41,025 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:28:41,025 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:28:41,027 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:28:41,046 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:28:41,046 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:28:41,048 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:28:41,064 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:28:41,065 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:28:41,066 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:28:41,081 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:28:41,081 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:28:41,111 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:28:41,126 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:28:41,127 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:28:41,128 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:28:41,141 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:28:41,142 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:28:41,143 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:28:41,157 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:28:41,157 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:28:41,158 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:28:41,172 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:28:41,172 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:28:44,559 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:28:44,577 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:28:44,577 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:28:44,579 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:28:44,593 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:28:44,593 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:28:44,594 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:28:44,609 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:28:44,609 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:28:44,611 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:28:44,625 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:28:44,625 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:28:46,899 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:28:46,918 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:28:46,918 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:28:46,920 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:28:46,942 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:28:46,943 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:28:46,945 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:28:46,964 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:28:46,964 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:28:46,965 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:28:46,981 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:28:46,981 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:31:14,091 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:31:14,127 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:31:14,127 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:31:46,622 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:31:46,653 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:31:46,653 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:31:46,653 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:31:46,655 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:31:46,670 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:31:46,670 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:31:46,670 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:31:46,671 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:31:46,685 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:31:46,685 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:31:46,685 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:31:46,686 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:31:46,700 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:31:46,700 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:31:46,700 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:31:51,029 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:31:51,057 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:31:51,057 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:31:51,057 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:31:51,059 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:31:51,078 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:31:51,078 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:31:51,078 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:31:51,079 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:31:51,093 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:31:51,093 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:31:51,094 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:31:51,095 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:31:51,110 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:31:51,110 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:31:51,110 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:31:51,143 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:31:51,158 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:31:51,158 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:31:51,158 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:31:51,159 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:31:51,173 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:31:51,173 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:31:51,173 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:31:51,175 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:31:51,189 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:31:51,189 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:31:51,189 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:31:51,190 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:31:51,204 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:31:51,204 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:31:51,204 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:31:53,726 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:31:53,755 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:31:53,756 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:31:53,756 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:31:53,758 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:31:53,777 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:31:53,777 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:31:53,777 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:31:53,779 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:31:53,796 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:31:53,796 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:31:53,796 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:31:53,798 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:31:53,813 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:31:53,813 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:31:53,813 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:32:03,914 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:32:03,946 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:32:03,946 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:32:03,946 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:32:03,948 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:32:03,965 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:32:03,965 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:32:03,965 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:32:03,967 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:32:03,983 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:32:03,983 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:32:03,983 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:32:03,984 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:32:03,999 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:32:03,999 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:32:03,999 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:32:09,167 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:32:09,195 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:32:09,195 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:32:09,195 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:32:09,197 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:32:09,215 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:32:09,215 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:32:09,215 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:32:09,217 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:32:09,234 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:32:09,234 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:32:09,234 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:32:09,236 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:32:09,251 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:32:09,251 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:32:09,251 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:32:16,424 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:32:16,447 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:32:16,447 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:32:16,447 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:32:16,448 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:32:16,466 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:32:16,466 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:32:16,466 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:32:16,468 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:32:16,486 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:32:16,486 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:32:16,486 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:32:16,487 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:32:16,503 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:32:16,503 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:32:16,503 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:32:16,533 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:32:16,548 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:32:16,548 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:32:16,548 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:32:16,550 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:32:16,563 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:32:16,564 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:32:16,564 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:32:16,565 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:32:16,579 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:32:16,579 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:32:16,579 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:32:16,580 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:32:16,594 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:32:16,594 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:32:16,594 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:32:17,754 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:32:17,784 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:32:17,784 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:32:17,784 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:32:17,786 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:32:17,803 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:32:17,803 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:32:17,803 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:32:17,805 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:32:17,824 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:32:17,824 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:32:17,824 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:32:17,825 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:32:17,841 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:32:17,841 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:32:17,841 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:32:21,677 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:32:21,711 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:32:21,711 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:32:21,711 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:32:21,714 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:32:21,732 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:32:21,732 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:32:21,732 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:32:21,734 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:32:21,751 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:32:21,751 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:32:21,751 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:32:21,753 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:32:21,767 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:32:21,767 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:32:21,767 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:32:21,795 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:32:21,809 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:32:21,809 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:32:21,809 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:32:21,811 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:32:21,825 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:32:21,825 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:32:21,825 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:32:21,826 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:32:21,840 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:32:21,840 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:32:21,840 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:32:21,842 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:32:21,856 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:32:21,856 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:32:21,856 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:32:23,247 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:32:23,275 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:32:23,275 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:32:23,275 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:32:23,277 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:32:23,295 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:32:23,295 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:32:23,295 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:32:23,297 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:32:23,315 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:32:23,315 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:32:23,315 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:32:23,317 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:32:23,333 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:32:23,333 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:32:23,333 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:32:27,071 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:32:27,104 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:32:27,104 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:32:27,104 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:32:27,107 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:32:27,126 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:32:27,126 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:32:27,126 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:32:27,128 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:32:27,146 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:32:27,146 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:32:27,146 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:32:27,147 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:32:27,162 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:32:27,162 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:32:27,162 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:32:36,414 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:32:36,445 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:32:36,445 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:32:36,445 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:32:36,447 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:32:36,464 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:32:36,464 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:32:36,464 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:32:36,465 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:32:36,483 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:32:36,483 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:32:36,483 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:32:36,485 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:32:36,500 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:32:36,500 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:32:36,500 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:33:24,228 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:33:24,245 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:33:24,245 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:33:24,245 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:33:24,247 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:33:24,262 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:33:24,263 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:33:24,263 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:33:24,264 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:33:24,280 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:33:24,280 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:33:24,280 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:33:24,281 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:33:24,296 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:33:24,296 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:33:24,296 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:33:26,555 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:33:26,574 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:33:26,574 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:33:26,574 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:33:26,575 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:33:26,591 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:33:26,591 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:33:26,591 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:33:26,593 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:33:26,610 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:33:26,610 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:33:26,610 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:33:26,612 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:33:26,626 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:33:26,626 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:33:26,626 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:33:26,656 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:33:26,671 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:33:26,671 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:33:26,671 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:33:26,672 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:33:26,686 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:33:26,686 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:33:26,686 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:33:26,688 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:33:26,702 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:33:26,702 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:33:26,702 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:33:26,703 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:33:26,718 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:33:26,718 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:33:26,718 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:33:33,426 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:33:33,455 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:33:33,455 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:33:33,455 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:33:33,457 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:33:33,475 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:33:33,475 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:33:33,475 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:33:33,477 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:33:33,492 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:33:33,492 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:33:33,492 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:33:33,494 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:33:33,509 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:33:33,509 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:33:33,509 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:33:35,624 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:33:35,651 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:33:35,651 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:33:35,651 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:33:35,653 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:33:35,672 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:33:35,672 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:33:35,672 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:33:35,674 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:33:35,688 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:33:35,688 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:33:35,688 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:33:35,690 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:33:35,704 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:33:35,704 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:33:35,704 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:33:46,750 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:33:46,753 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:33:46,771 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:33:46,771 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:33:46,771 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:33:46,773 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:33:46,775 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:33:46,790 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:33:46,790 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:33:46,790 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:33:46,792 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:33:46,793 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:33:46,806 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:33:46,806 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:33:46,806 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:33:46,807 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:33:46,809 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:33:46,821 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:33:46,821 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:33:46,821 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:33:56,630 - httpx - INFO - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 00:34:14,147 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:34:14,148 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:14,175 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:34:14,175 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:34:14,175 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:34:14,176 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:34:14,177 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:14,189 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:34:14,190 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:34:14,190 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:34:14,191 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:34:14,192 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:14,204 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:34:14,204 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:34:14,204 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:34:14,206 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:34:14,207 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:14,219 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:34:14,219 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:34:14,219 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:34:31,324 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:34:31,326 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:31,352 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:34:49,720 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:34:49,721 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:49,740 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:34:49,740 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:34:49,740 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:34:49,741 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:34:49,743 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:49,756 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:34:49,756 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:34:49,756 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:34:49,758 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:34:49,759 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:49,773 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:34:49,773 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:34:49,773 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:34:49,775 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:34:49,776 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:49,789 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:34:49,790 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:34:49,790 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:34:49,826 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:34:49,827 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:49,841 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:34:49,841 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:34:49,841 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:34:49,843 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:34:49,844 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:49,858 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:34:49,858 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:34:49,858 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:34:49,859 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:34:49,861 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:49,874 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:34:49,874 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:34:49,874 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:34:49,876 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:34:49,877 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:34:49,890 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:34:49,890 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:34:49,890 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:36:01,043 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:36:01,044 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:01,072 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:36:01,072 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:36:01,072 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:36:01,074 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:36:01,075 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:01,087 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:36:01,087 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:36:01,087 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:36:01,089 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:36:01,090 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:01,103 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:36:01,103 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:36:01,103 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:36:01,105 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:36:01,106 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:01,118 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:36:01,118 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:36:01,118 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:36:20,210 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:36:20,212 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:20,245 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:36:20,245 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:36:20,245 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:36:20,246 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:36:20,248 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:20,261 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:36:20,261 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:36:20,261 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:36:20,262 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:36:20,264 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:20,277 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:36:20,277 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:36:20,277 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:36:20,278 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:36:20,280 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:20,293 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:36:20,293 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:36:20,293 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:36:44,662 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:36:44,663 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:44,686 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:36:44,686 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:36:44,686 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:36:44,688 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:36:44,689 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:44,701 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:36:44,701 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:36:44,701 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:36:44,703 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:36:44,704 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:44,717 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:36:44,717 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:36:44,717 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:36:44,718 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:36:44,720 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:36:44,732 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:36:44,732 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:36:44,732 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:37:09,900 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:37:09,904 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:37:09,925 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:37:09,925 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:37:09,925 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:37:09,927 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:37:09,930 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:37:09,946 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:37:09,946 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:37:09,946 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:37:09,948 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:37:09,949 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:37:09,963 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:37:09,963 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:37:09,963 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:37:09,965 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:37:09,966 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:37:09,980 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:37:09,980 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:37:09,980 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:37:45,084 - httpx - INFO - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 00:38:27,226 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:38:27,228 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:38:27,252 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:38:27,252 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:38:27,252 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:38:27,255 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:38:27,257 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:38:27,274 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:38:27,275 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:38:27,275 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:38:27,277 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:38:27,279 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:38:27,293 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:38:27,293 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:38:27,293 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:38:27,295 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:38:27,296 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:38:27,310 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:38:27,310 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:38:27,310 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:38:42,163 - httpx - INFO - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 00:41:05,516 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:41:05,519 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:41:05,540 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:41:05,540 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:41:05,540 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:41:05,542 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:41:05,543 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:41:05,559 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:41:05,559 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:41:05,559 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:41:05,560 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:41:05,562 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:41:05,574 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:41:05,575 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:41:05,575 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:41:05,576 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:41:05,577 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:41:05,591 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:41:05,591 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:41:05,591 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:41:05,629 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:41:05,631 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:41:05,644 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:41:05,644 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:41:05,644 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:41:05,646 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:41:05,648 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:41:05,661 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:41:05,661 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:41:05,661 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:41:05,663 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:41:05,664 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:41:05,677 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:41:05,677 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:41:05,677 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:41:05,679 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:41:05,680 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:41:05,693 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:41:05,693 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:41:05,693 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:42:17,138 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:42:17,140 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:42:17,167 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:42:17,167 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:42:17,167 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:42:17,169 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:42:17,171 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:42:17,187 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:42:17,187 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:42:17,188 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:42:17,189 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:42:17,191 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:42:17,205 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:42:17,205 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:42:17,205 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:42:17,206 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:42:17,208 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:42:17,222 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:42:17,222 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:42:17,222 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:42:23,333 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:42:23,340 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:42:23,365 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:42:23,365 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:42:23,365 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:42:23,367 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:42:23,369 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:42:23,385 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:42:23,385 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:42:23,385 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:42:23,387 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:42:23,389 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:42:23,403 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:42:23,403 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:42:23,404 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:42:23,405 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:42:23,407 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:42:23,420 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:42:23,421 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:42:23,421 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:44:47,660 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:44:47,662 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:44:47,675 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:44:47,676 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:44:47,676 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:44:47,677 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:44:47,679 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:44:47,693 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:44:47,693 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:44:47,693 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:44:47,695 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:44:47,696 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:44:47,710 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:44:47,710 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:44:47,710 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:44:47,712 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:44:47,713 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:44:47,726 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:44:47,726 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:44:47,726 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:47:39,075 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:47:39,076 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:39,109 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:47:39,109 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:47:39,109 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:47:39,110 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:47:39,111 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:39,124 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:47:39,124 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:47:39,124 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:47:39,125 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:47:39,127 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:39,139 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:47:39,139 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:47:39,139 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:47:39,141 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:47:39,142 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:39,154 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:47:39,154 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:47:39,154 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:47:52,586 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:47:52,592 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:52,615 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:47:52,615 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:47:52,615 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:47:52,617 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:47:52,619 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:52,638 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:47:52,638 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:47:52,638 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:47:52,640 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:47:52,642 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:52,656 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:47:52,656 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:47:52,656 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:47:52,658 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:47:52,659 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:52,673 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:47:52,673 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:47:52,673 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:47:52,703 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:47:52,705 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:52,718 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:47:52,718 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:47:52,718 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:47:52,720 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:47:52,721 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:52,735 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:47:52,735 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:47:52,735 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:47:52,736 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:47:52,738 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:52,750 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:47:52,750 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:47:52,750 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:47:52,752 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:47:52,753 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:47:52,766 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:47:52,766 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:47:52,766 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:48:09,164 - utils.helpers - INFO - 初始化 operations Agent
+2025-08-30 00:48:09,171 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:48:09,193 - utils.helpers - INFO - 初始化 openai operations Agent
+2025-08-30 00:48:09,194 - utils.helpers - INFO - 运维专家Agent已初始化
+2025-08-30 00:48:09,194 - utils.helpers - INFO - 初始化 operations Agent 成功
+2025-08-30 00:48:09,195 - utils.helpers - INFO - 初始化 go Agent
+2025-08-30 00:48:09,197 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:48:09,213 - utils.helpers - INFO - 初始化 openai go Agent
+2025-08-30 00:48:09,213 - utils.helpers - INFO - Go语言专家Agent已初始化
+2025-08-30 00:48:09,213 - utils.helpers - INFO - 初始化 go Agent 成功
+2025-08-30 00:48:09,215 - utils.helpers - INFO - 初始化 monitoring Agent
+2025-08-30 00:48:09,217 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:48:09,233 - utils.helpers - INFO - 初始化 openai monitoring Agent
+2025-08-30 00:48:09,233 - utils.helpers - INFO - 监控专家Agent已初始化
+2025-08-30 00:48:09,234 - utils.helpers - INFO - 初始化 monitoring Agent 成功
+2025-08-30 00:48:09,235 - utils.helpers - INFO - 初始化 ansible Agent
+2025-08-30 00:48:09,237 - utils.helpers - INFO - 检测到智谱AI的BASE_URL，使用智谱AI配置
+2025-08-30 00:48:09,251 - utils.helpers - INFO - 初始化 openai ansible Agent
+2025-08-30 00:48:09,251 - utils.helpers - INFO - Ansible专家Agent已初始化
+2025-08-30 00:48:09,251 - utils.helpers - INFO - 初始化 ansible Agent 成功
+2025-08-30 00:48:26,333 - httpx - INFO - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"

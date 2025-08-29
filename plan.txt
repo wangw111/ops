@@ -7,6 +7,8 @@
 - agent 可以生成代码，代码可以运行
 - agent 可以生成markdown文档，markdown文档可以运行
 - agent 可以对接openai claude qwen
-
+- openai 支持 OPENAI_API_KEY OPENAI_BASE_URL OPENAI_MODEL 参数
+- Claude 支持 ANTHROPIC_BASE_URL ANTHROPIC_AUTH_TOKEN 参数
+- 设置 git 忽略pyc等中间编译文件
 
 

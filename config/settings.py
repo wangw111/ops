@@ -13,12 +13,14 @@ class AgentConfig(BaseSettings):
     
     # OpenAI Configuration
     openai_api_key: str = Field(env="OPENAI_API_KEY", default="")
+    openai_base_url: str = Field(env="OPENAI_BASE_URL", default="https://api.openai.com/v1")
     openai_model: str = Field(env="OPENAI_MODEL", default="gpt-3.5-turbo")
     openai_temperature: float = Field(env="OPENAI_TEMPERATURE", default=0.7)
     openai_max_tokens: int = Field(env="OPENAI_MAX_TOKENS", default=1000)
     
     # Claude Configuration
-    claude_api_key: str = Field(env="CLAUDE_API_KEY", default="")
+    anthropic_base_url: str = Field(env="ANTHROPIC_BASE_URL", default="https://api.anthropic.com")
+    anthropic_auth_token: str = Field(env="ANTHROPIC_AUTH_TOKEN", default="")
     claude_model: str = Field(env="CLAUDE_MODEL", default="claude-3-sonnet-20240229")
     claude_temperature: float = Field(env="CLAUDE_TEMPERATURE", default=0.7)
     claude_max_tokens: int = Field(env="CLAUDE_MAX_TOKENS", default=1000)

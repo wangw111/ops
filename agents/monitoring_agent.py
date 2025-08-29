@@ -3,16 +3,21 @@ Monitoring expert agent for system monitoring and performance analysis.
 """
 
 from typing import Dict, Any, List
-from agents.openai_agent import OpenAIAgent
+from agents.multi_ai_agent import MultiAIAgent
 from utils.code_generator import CodeGenerator
 
 
-class MonitoringAgent(OpenAIAgent):
+class MonitoringAgent(MultiAIAgent):
     """监控专家Agent - 专门处理系统监控、性能分析和告警配置"""
     
-    def __init__(self):
-        """初始化监控专家Agent"""
-        super().__init__("monitoring")
+    def __init__(self, provider: str = "openai"):
+        """
+        初始化监控专家Agent
+        
+        Args:
+            provider: AI提供商 (openai, claude, qwen)
+        """
+        super().__init__("monitoring", provider)
         self.code_generator = CodeGenerator(self.logger)
         self.logger.info("监控专家Agent已初始化")
     

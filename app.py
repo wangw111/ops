@@ -16,7 +16,7 @@ from agents.go_agent import GoAgent
 from agents.monitoring_agent import MonitoringAgent
 from agents.ansible_agent import AnsibleAgent
 from agents.multi_ai_agent import MultiAIAgent
-from utils.helpers import get_agent_info, setup_logging, format_timestamp
+from utils.helpers import setup_logging, format_timestamp
 from config.settings import get_config
 
 
@@ -37,6 +37,9 @@ class StreamlitInterface:
         
         # 初始化session state
         self._init_session_state()
+        
+        # 验证API配置
+        self.api_status = self._check_api_status()
     
     def _initialize_agents(self) -> Dict[str, Any]:
         """初始化agents"""
@@ -44,19 +47,31 @@ class StreamlitInterface:
         
         for agent_type in ["operations", "go", "monitoring", "ansible"]:
             try:
-                agents[agent_type] = MultiAIAgent(agent_type, self.default_provider)
+                # 直接使用具体的Agent类，而不是MultiAIAgent
+                if agent_type == "operations":
+                    agents[agent_type] = OperationsAgent(self.default_provider)
+                elif agent_type == "go":
+                    agents[agent_type] = GoAgent(self.default_provider)
+                elif agent_type == "monitoring":
+                    agents[agent_type] = MonitoringAgent(self.default_provider)
+                elif agent_type == "ansible":
+                    agents[agent_type] = AnsibleAgent(self.default_provider)
                 self.logger.info(f"初始化 {agent_type} Agent 成功")
             except Exception as e:
                 self.logger.error(f"初始化 {agent_type} Agent 失败: {str(e)}")
-                # 如果MultiAIAgent失败，使用原来的Agent
-                if agent_type == "operations":
-                    agents[agent_type] = OperationsAgent()
-                elif agent_type == "go":
-                    agents[agent_type] = GoAgent()
-                elif agent_type == "monitoring":
-                    agents[agent_type] = MonitoringAgent()
-                elif agent_type == "ansible":
-                    agents[agent_type] = AnsibleAgent()
+                # 如果初始化失败，使用默认的openai provider
+                try:
+                    if agent_type == "operations":
+                        agents[agent_type] = OperationsAgent("openai")
+                    elif agent_type == "go":
+                        agents[agent_type] = GoAgent("openai")
+                    elif agent_type == "monitoring":
+                        agents[agent_type] = MonitoringAgent("openai")
+                    elif agent_type == "ansible":
+                        agents[agent_type] = AnsibleAgent("openai")
+                    self.logger.info(f"使用默认openai provider初始化 {agent_type} Agent 成功")
+                except Exception as e2:
+                    self.logger.error(f"使用默认provider初始化 {agent_type} Agent 也失败: {str(e2)}")
         
         return agents
     
@@ -69,16 +84,59 @@ class StreamlitInterface:
         if 'conversation_count' not in st.session_state:
             st.session_state.conversation_count = 0
     
+    def _check_api_status(self) -> Dict[str, str]:
+        """检查API配置状态"""
+        status = {}
+        
+        # 检查OpenAI配置
+        openai_key = os.getenv("OPENAI_API_KEY", "")
+        if openai_key and openai_key != "your_openai_api_key_here":
+            base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+            if "bigmodel.cn" in base_url:
+                status["openai"] = "✅ 智谱AI已配置"
+            else:
+                status["openai"] = "✅ OpenAI已配置"
+        else:
+            status["openai"] = "❌ 未配置"
+        
+        # 检查Claude配置
+        claude_key = os.getenv("ANTHROPIC_AUTH_TOKEN", "")
+        if claude_key and claude_key != "your_claude_api_key_here":
+            status["claude"] = "✅ Claude已配置"
+        else:
+            status["claude"] = "❌ 未配置"
+        
+        # 检查Qwen配置
+        qwen_key = os.getenv("QWEN_API_KEY", "")
+        if qwen_key and qwen_key != "your_qwen_api_key_here":
+            status["qwen"] = "✅ Qwen已配置"
+        else:
+            status["qwen"] = "❌ 未配置"
+        
+        return status
+    
     def render_sidebar(self):
         """渲染侧边栏"""
         st.sidebar.title("🤖 开发助手Agent")
         st.sidebar.markdown("---")
         
+        # API配置状态
+        st.sidebar.subheader("🔑 API配置状态")
+        for provider, status in self.api_status.items():
+            st.sidebar.text(f"{provider.upper()}: {status}")
+        
+        st.sidebar.markdown("---")
+        
         # Agent选择
         st.sidebar.subheader("选择专家")
-        all_agent_info = get_agent_info()  # 获取所有agent信息
+        agent_info_map = {
+            "operations": {"name": "运维专家", "description": "服务器部署、容器化、CI/CD等运维任务", "icon": "🔧"},
+            "go": {"name": "Go语言专家", "description": "Go语言开发、并发编程、微服务等", "icon": "🐹"},
+            "monitoring": {"name": "监控专家", "description": "系统监控、性能分析、告警配置", "icon": "📊"},
+            "ansible": {"name": "Ansible专家", "description": "自动化配置管理、部署编排", "icon": "🎭"}
+        }
         
-        for agent_type, info in all_agent_info.items():
+        for agent_type, info in agent_info_map.items():
             if agent_type in self.agents:
                 col1, col2 = st.sidebar.columns([1, 4])
                 with col1:
@@ -131,7 +189,7 @@ class StreamlitInterface:
         st.sidebar.markdown("---")
         
         # 当前Agent信息
-        current_info = get_agent_info(st.session_state.current_agent)
+        current_info = agent_info_map[st.session_state.current_agent]
         st.sidebar.subheader(f"当前专家: {current_info['name']}")
         st.sidebar.markdown(f"**描述**: {current_info['description']}")
         
@@ -152,7 +210,13 @@ class StreamlitInterface:
     def render_chat_interface(self):
         """渲染聊天界面"""
         current_agent = self.agents[st.session_state.current_agent]
-        agent_info = get_agent_info(st.session_state.current_agent)
+        agent_info_map = {
+            "operations": {"name": "运维专家", "description": "服务器部署、容器化、CI/CD等运维任务", "icon": "🔧"},
+            "go": {"name": "Go语言专家", "description": "Go语言开发、并发编程、微服务等", "icon": "🐹"},
+            "monitoring": {"name": "监控专家", "description": "系统监控、性能分析、告警配置", "icon": "📊"},
+            "ansible": {"name": "Ansible专家", "description": "自动化配置管理、部署编排", "icon": "🎭"}
+        }
+        agent_info = agent_info_map[st.session_state.current_agent]
         
         # 标题
         st.title(f"{agent_info['icon']} {agent_info['name']}")
@@ -204,7 +268,13 @@ class StreamlitInterface:
     def render_agent_features(self):
         """渲染Agent特色功能"""
         current_agent = self.agents[st.session_state.current_agent]
-        agent_info = get_agent_info(st.session_state.current_agent)
+        agent_info_map = {
+            "operations": {"name": "运维专家", "description": "服务器部署、容器化、CI/CD等运维任务", "icon": "🔧"},
+            "go": {"name": "Go语言专家", "description": "Go语言开发、并发编程、微服务等", "icon": "🐹"},
+            "monitoring": {"name": "监控专家", "description": "系统监控、性能分析、告警配置", "icon": "📊"},
+            "ansible": {"name": "Ansible专家", "description": "自动化配置管理、部署编排", "icon": "🎭"}
+        }
+        agent_info = agent_info_map[st.session_state.current_agent]
         
         st.markdown("---")
         st.subheader(f"{agent_info['name']} 特色功能")

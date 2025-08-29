@@ -3,16 +3,21 @@ Go language expert agent for Go development assistance.
 """
 
 from typing import Dict, Any, List
-from agents.openai_agent import OpenAIAgent
+from agents.multi_ai_agent import MultiAIAgent
 from utils.code_generator import CodeGenerator
 
 
-class GoAgent(OpenAIAgent):
+class GoAgent(MultiAIAgent):
     """Go语言专家Agent - 专门处理Go语言开发相关任务"""
     
-    def __init__(self):
-        """初始化Go语言专家Agent"""
-        super().__init__("go")
+    def __init__(self, provider: str = "openai"):
+        """
+        初始化Go语言专家Agent
+        
+        Args:
+            provider: AI提供商 (openai, claude, qwen)
+        """
+        super().__init__("go", provider)
         self.code_generator = CodeGenerator(self.logger)
         self.logger.info("Go语言专家Agent已初始化")
     
@@ -463,6 +468,7 @@ require (
 
 import (
     "fmt"
+    "os"
     "runtime"
 )
 

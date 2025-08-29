@@ -3,16 +3,21 @@ Operations expert agent for DevOps and system administration.
 """
 
 from typing import Dict, Any, List
-from agents.openai_agent import OpenAIAgent
+from agents.multi_ai_agent import MultiAIAgent
 from utils.code_generator import CodeGenerator
 
 
-class OperationsAgent(OpenAIAgent):
+class OperationsAgent(MultiAIAgent):
     """运维专家Agent - 专门处理服务器运维、容器化、CI/CD等任务"""
     
-    def __init__(self):
-        """初始化运维专家Agent"""
-        super().__init__("operations")
+    def __init__(self, provider: str = "openai"):
+        """
+        初始化运维专家Agent
+        
+        Args:
+            provider: AI提供商 (openai, claude, qwen)
+        """
+        super().__init__("operations", provider)
         self.code_generator = CodeGenerator(self.logger)
         self.logger.info("运维专家Agent已初始化")
     
@@ -197,13 +202,13 @@ install_dependencies() {{
     apt-get upgrade -y
     
     # 安装基础软件
-    apt-get install -y \\
-        nginx \\
-        supervisor \\
-        python3 \\
-        python3-pip \\
-        git \\
-        curl \\
+    apt-get install -y \\\\
+        nginx \\\\
+        supervisor \\\\
+        python3 \\\\
+        python3-pip \\\\
+        git \\\\
+        curl \\\\
         wget
     
     log_info "依赖安装完成"
@@ -277,10 +282,10 @@ server {{
     
     location / {{
         proxy_pass http://127.0.0.1:$SERVICE_PORT;
-        proxy_set_header Host \$host;
-        proxy_set_header X-Real-IP \$remote_addr;
-        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto \$scheme;
+        proxy_set_header Host \\$host;
+        proxy_set_header X-Real-IP \\$remote_addr;
+        proxy_set_header X-Forwarded-For \\$proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto \\$scheme;
     }}
 }}
 EOF
@@ -431,8 +436,8 @@ volumes:
 WORKDIR /app
 
 # 安装系统依赖
-RUN apt-get update && apt-get install -y \\
-    curl \\
+RUN apt-get update && apt-get install -y \\\\
+    curl \\\\
     && rm -rf /var/lib/apt/lists/*
 
 # 复制应用代码
@@ -449,7 +454,7 @@ USER appuser
 EXPOSE 8080
 
 # 健康检查
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \\
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \\\\
     CMD curl -f http://localhost:8080/health || exit 1
 
 # 启动应用
@@ -503,11 +508,11 @@ stop_container() {{
 # 启动新容器
 start_container() {{
     log_info "启动新容器..."
-    docker run -d \\
-        --name $CONTAINER_NAME \\
-        --restart unless-stopped \\
-        -p 8080:8080 \\
-        -v $(pwd)/logs:/app/logs \\
+    docker run -d \\\\
+        --name $CONTAINER_NAME \\\\
+        --restart unless-stopped \\\\
+        -p 8080:8080 \\\\
+        -v $(pwd)/logs:/app/logs \\\\
         $IMAGE_NAME
     
     log_info "容器启动完成"
